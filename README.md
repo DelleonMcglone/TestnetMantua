@@ -1,39 +1,27 @@
-# TestnetMantua
+# Unified Hooks Index for Mantua Protocol
 
-# 🚀 Mantua Protocol
+This directory contains data files and contract outlines for the Mantua Protocol's
+research into Uniswap v4 hooks and infrastructure on the Base Sepolia network,
+OpenZeppelin’s Uniswap Hook Suite, and popular hooks deployed on the Base
+network as catalogued by HookRank.  The aim of this index is to provide a
+machine‑readable collection of contract addresses, descriptions and meta‑data
+that can be used to fine tune large language models to reason about, monitor
+and interact with Uniswap liquidity pools and custom hooks.
 
-Mantua Protocol is a blockchain-native large language model (LLM) purpose-built for programmable liquidity on the Base blockchain. Mantua enables LPs, traders, and Uniswap hook developers to manage liquidity pools, swaps, and advanced DeFi strategies — all through a conversational AI chat interface.
+The structure is as follows:
 
-Mantua goes beyond generic DeFi bots by offering real-time onchain data, advanced smart contract reasoning, and autonomous transaction execution. Our goal is to replace complex dashboards with an AI-native user experience, making decentralized finance accessible and programmable for everyone.
+- **`unified_index.csv`** – a CSV file summarising all entries across the
+  different sources.  Each row contains the following fields: `category`,
+  `name`, `contract_address`, `network`, `description` and `notes`.
+- **`base_sepolia_contracts.csv`** – specific contract addresses for Uniswap v4
+  infrastructure on the Base Sepolia testnet, pulled from Uniswap’s official
+  deployment documentation.
+- **`hookrank_base_hooks.csv`** – contract addresses and on‑chain metrics for a
+  selection of hooks deployed on the Base network and indexed by HookRank.
+  These hooks were filtered to include only those on Base and the most active
+  ones available at the time of research.  Each row includes the hook name,
+  address, deployed timestamp, number of pools, swaps, trading volume, TVL,
+  success rate, total fees and protocol fees.
 
----
-
-## ✨ Key Features
-✅ Conversational AI interface for swaps, bridging, liquidity, and Uniswap v4 hooks  
-✅ Real-time blockchain data fetching from Base mainnet & Sepolia testnet  
-✅ Autonomous transaction execution with session key management  
-✅ Support for Uniswap v4 programmable hooks  
-✅ Inline swap & liquidity UI components  
-✅ API endpoints for integrating external agents and tools  
-✅ SPA (single-page app) frontend with wallet connection & confirmation flows  
-✅ Light/dark mode with mobile-responsive design  
-✅ Self-hosted LLM for privacy, low latency, and full control
-
----
-
-## 🛠️ Tech Stack
-- LLM: [Mistral 7B](https://mistral.ai/) (fine-tuned on smart contracts, transactions, Uniswap hooks)
-- Inference: Ollama (testing) → vLLM (production)
-- Frontend: Next.js + Tailwind CSS
-- Backend: FastAPI (REST/WebSocket)
-- Blockchain: Base RPC, Uniswap v4 SDK
-- Wallets: wagmi, thirdweb/onchainkit
-- CI/CD: GitHub Actions
-- Hosting: Vercel/Netlify (SPA) + GPU server for LLM/API
-
----
-
-## ⚙️ Architecture Overview
-- **Frontend SPA**: Runs on Vercel/Netlify → connects to API server → hosts chat interface.
-- **API Server**: FastAPI → integrates with LLM (Ollama/vLLM) → connects to Base RPC → executes transactions.
-- **Blockchain Integration**: Direct read/wri
+These resources can be extended by appending additional rows to the CSV files
+when new hooks or networks become relevant.
