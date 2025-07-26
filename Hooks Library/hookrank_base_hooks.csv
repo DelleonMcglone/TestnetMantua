@@ -1,9 +1,0 @@
-name,contract_address,network,deployed,pools,swaps,trading_volume,TVL,success_rate,total_fees,protocol_fees,notes
-Flaunch,0x51bba15255406cfe7099a42183302640ba7dafdc,Base,2025-01-29 05:34,4730,239891,95_345_363.78,5_145_747.79,100%,1_382_120.19,0,"High‑activity hook on Base; large number of pools and swaps【129814954585930†screenshot】"
-VerifiedPoolsBasicHook,0x5cd525c621afca515bf58631d37d3bfa7b72aae4,Base,2025-02-21 09:45,5,31136,5_907_706.78,1_845_426.40,100%,12_675.25,,"Provides verified pool functionality; emphasises safety【157990363365919†screenshot】"
-Politiswap,0x4cd3be87688aea2a0297c22c17a73cae65adc0cc,Base,2025-04-24 12:34,537,2957,975_930.57,354_018.18,100%,0,,"Swap‑centric hook with moderate activity【309274945707880†screenshot】"
-PositionManager,0x7f85bb58059fbaf6bf19bdd2b9078d9e546efdc,Base,2025-04-30 15:09,2442,9237,1_182_661.48,182_354.77,100%,8_785.97,,"Hook facilitating position management across pools【807146418858899†screenshot】"
-BtcAccHook,0x70426ac7043aeef50f47b6a03ae68ccf808e044,Base,2025-02-21 11:09,7,1512,550_361.99,178_508.46,100%,1_651.09,0,"Small hook for BTC accumulation strategies【595586113030089†screenshot】"
-SpawnerHook,0xb476c448da4453208df4e371fee26f4e630d3044,Base,2025-03-30 12:45,14959,29040,4_298_412.45,135_199.96,100%,0,45_258.70,"Produces new pools or positions; collects protocol fees【979679004652172†screenshot】"
-ContentmentHook,0x2a0e6206325c966fee8b2284ca1a276877332844,Base,2025-04-22 14:17,1,944,572_953.73,91_139.15,100%,0,11_779.93,"Low‑volume hook; emphasises contentment in range【584796952196285†screenshot】"
-LimitOrderHook (HookRank),0x9d119f505ca92f4b6983c1285d1ac0aaf7ec0c0,Base,2025-05-25 15:43,6,45932,2_399_591.95,80_227.82,100%,1_004.69,0,"Implements on‑chain limit orders for Uniswap v4 pools【848452622706470†screenshot】"
