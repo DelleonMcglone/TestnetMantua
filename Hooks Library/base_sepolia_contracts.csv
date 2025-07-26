@@ -1,9 +1,0 @@
-category,name,contract_address,network,description,notes
-BaseSepolia,PoolManager,0x05E73354cFDd6745C338b50BcFDfA3Aa6fA03408,Base Sepolia,"Core contract that manages the state and lifecycle of Uniswap v4 pools; responsible for collecting liquidity, swaps and fee logic",Referenced from Uniswap deployment docs【848337322619475†L344-L360】
-BaseSepolia,UniversalRouter,0x492e6456d9528771018deb9e87ef7750ef184104,Base Sepolia,"Router contract that unifies multiple swap routes and handles multi‑hop trades across pools",From official Uniswap v4 Base Sepolia address list【848337322619475†L344-L360】
-BaseSepolia,PositionManager,0x4b2c77d209d3405f41a037ec6c77f7f5b8e2ca80,Base Sepolia,"Manages positions on behalf of users and handles minting of LP NFTs for Uniswap v4 pools",From Uniswap docs【848337322619475†L344-L360】
-BaseSepolia,StateView,0x571291b572ed32ce6751a2cb2486ebee8defb9b4,Base Sepolia,"Read‑only contract that exposes pool state variables, price and liquidity information",From Uniswap docs【848337322619475†L344-L360】
-BaseSepolia,Quoter,0x4a6513c898fe1b2d0e78d3b0e0a4a151589b1cba,Base Sepolia,"Utility contract that simulates swaps to quote expected output amounts without executing them",From Uniswap docs【848337322619475†L344-L360】
-BaseSepolia,PoolSwapTest,0x8b5bcc363dde2614281ad875bad385e0a785d3b9,Base Sepolia,"Testing contract used by Uniswap to validate swap behaviour on the Base Sepolia deployment",Uniswap v4 test hook address【848337322619475†L344-L360】
-BaseSepolia,PoolModifyLiquidityTest,0x37429cd17cb1454c34e7f50b09725202fd533039,Base Sepolia,"Testing contract for liquidity modification operations on the Base Sepolia deployment",Uniswap v4 test hook address【848337322619475†L344-L360】
-BaseSepolia,Permit2,0x000000000022D473030F116dDEE9F6B43aC78BA3,Base Sepolia,"Token permit contract used for managing approvals and permissions across different Uniswap components",From Uniswap docs【848337322619475†L344-L360】
