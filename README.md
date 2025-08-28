@@ -7,7 +7,7 @@ We combine **LLM-driven natural language interfaces** with **programmable liquid
 
 ---
 
-## 🌟 Vision
+## Vision
 
 DeFi today is fragmented, complex, and static. Mantua reimagines DeFi as **adaptive and intelligent infrastructure**:
 
@@ -17,7 +17,7 @@ DeFi today is fragmented, complex, and static. Mantua reimagines DeFi as **adapt
 
 ---
 
-## 🚀 Core Features
+## Core Features
 
 * **Programmable Liquidity** — Deploy adaptive strategies (dynamic fees, MEV protection, TWAP pricing, auto-rebalancing) via hooks.
 * **Natural Language DeFi** — Swap, create pools, stake, and manage portfolios using chat.
@@ -26,7 +26,7 @@ DeFi today is fragmented, complex, and static. Mantua reimagines DeFi as **adapt
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 * **Frontend:** Next.js + Tailwind (UI)
 * **AI Layer:** Mantua LLM fine-tuned for DeFi reasoning & execution
@@ -40,7 +40,7 @@ DeFi today is fragmented, complex, and static. Mantua reimagines DeFi as **adapt
 ⚠️ **Disclaimer:** Experimental software — use at your own risk.
 
 
-## 🌐 Links
+## Links
 
 * Twitter/X: [@Mantuaprotocol](https://x.com/mantuaprotocol)
 * Founder: [@DelleonMcglone](https://x.com/DelleonMcglone)
