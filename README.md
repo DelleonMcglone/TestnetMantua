@@ -5,8 +5,6 @@
 Mantua Protocol is an **AI-powered programmable liquidity layer** designed for the entire DeFi ecosystem.
 We combine **LLM-driven natural language interfaces** with **programmable liquidity hooks** and **autonomous DeFi agents**, enabling a new category we call **DeFiAI**: liquidity, trading, and portfolio management that’s conversational, adaptive, and intelligent.
 
-> **Tagline:** Built for DeFiAI. Liquidity on autopilot.
-
 ---
 
 ## 🌟 Vision
