@@ -1,8 +1,8 @@
-# Mantua Protocol
+# Mantua AI
 
 **AI-Native OS for DeFi — Built for the Industry, Not a Single Chain**
 
-Mantua Protocol is an **AI-powered programmable liquidity layer** designed for the entire DeFi ecosystem.
+Mantua AI is an **AI-powered programmable liquidity layer** designed for the entire DeFi ecosystem.
 We combine **LLM-driven natural language interfaces** with **programmable liquidity hooks** and **autonomous DeFi agents**, enabling a new category we call **DeFiAI**: liquidity, trading, and portfolio management that’s conversational, adaptive, and intelligent.
 
 ---
@@ -42,12 +42,12 @@ DeFi today is fragmented, complex, and static. Mantua reimagines DeFi as **adapt
 
 ## Links
 
-* Twitter/X: [@Mantuaprotocol](https://x.com/mantuaprotocol)
+* Twitter/X: [@Mantua_ai](https://x.com/mantua_ai)
 * Founder: [@DelleonMcglone](https://x.com/DelleonMcglone)
-* Newsletter: (https://paragraph.com/@mantua-protocol)
+* Newsletter: (https://paragraph.com/@mantua-ai)
 
 ---
 
 ## 📄 License
 
-MIT License © 2025 Mantua Protocol
+MIT License © 2025 Mantua AI
