@@ -1,6 +1,6 @@
 # Mantua.AI – AI-Native DeFi Agent on Base
 
-An AI-powered on-chain assistant that connects natural language to blockchain actions. Built on **Base** with **Uniswap v4 hooks**, autonomous agents, and real-time blockchain reasoning.
+An AI-powered on-chain assistant that connects natural language to blockchain actions. Built for **DefAI** with **Uniswap v4 hooks**, autonomous agents, artificial intelligence, and real-time blockchain reasoning.
 
 ## Project Structure
 
