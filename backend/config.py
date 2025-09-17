@@ -1,4 +1,4 @@
-"""Configuration handling for the backend service.
+"""Configuration handling for the Mantua.AI backend service.
 
 This module centralises the configuration of environment variables such as
 API keys, RPC endpoints and feature flags.  Values are read from the
@@ -9,9 +9,9 @@ starting the server.
 Example:
 
 ```bash
-export BASE_RPC_URL="https://base-mainnet.infura.io/v3/<your-api-key>"
+export DATABASE_URL="postgresql://user:pass@localhost:5432/mantua"
+export JWT_SECRET_KEY="super-secret"
 export OPENAI_API_KEY="sk-..."
-export COINGECKO_API_KEY="CG-LX..."
 ```
 """
 
@@ -29,7 +29,6 @@ class Settings:
     )
 
     # Uniswap v4 contract addresses (latest as of August 2025)
-    # See: https://docs.uniswap.org/contracts/v4/deployments
     uniswap_v4_pool_manager_mainnet: str = os.getenv(
         "UNISWAP_V4_POOL_MANAGER_MAINNET", "0x498581ff718922c3f8e6a244956af099b2652b2b"
     )
@@ -59,6 +58,30 @@ class Settings:
     enable_intent_parser: bool = os.getenv("ENABLE_INTENT_PARSER", "true").lower()
     enable_simulation: bool = os.getenv("ENABLE_SIMULATION", "true").lower()
     enable_ml_models: bool = os.getenv("ENABLE_ML_MODELS", "true").lower()
+
+    # Database
+    database_url: str = os.getenv(
+        "DATABASE_URL",
+        "postgresql://postgres:postgres@localhost:5432/mantua",
+    )
+
+    # JWT settings
+    jwt_secret_key: str = os.getenv("JWT_SECRET_KEY", "change-me")
+    jwt_algorithm: str = os.getenv("JWT_ALGORITHM", "HS256")
+    access_token_expire_minutes: int = int(
+        os.getenv("ACCESS_TOKEN_EXPIRE_MINUTES", "60")
+    )
+
+    # Redis
+    redis_url: str = os.getenv("REDIS_URL", "redis://localhost:6379/0")
+
+    # Financial safety limits
+    transaction_limit_usd: float = float(os.getenv("TRANSACTION_LIMIT_USD", "1000"))
+    daily_limit_usd: float = float(os.getenv("DAILY_LIMIT_USD", "5000"))
+
+    # Slippage and gas protection
+    slippage_tolerance: float = float(os.getenv("SLIPPAGE_TOLERANCE", "0.01"))
+    gas_buffer_percentage: float = float(os.getenv("GAS_BUFFER_PERCENTAGE", "0.2"))
 
 
 settings = Settings()

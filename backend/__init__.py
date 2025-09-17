@@ -1,7 +1,10 @@
-"""Backend package initialization.
+"""Backend package initialisation.
 
-This module simply marks the `backend` directory as a Python package.  It can
-also expose shared constants or helper functions in the future.
+This file marks the backend directory as a Python package and can be used
+to expose top‑level modules or shared objects.  Currently it simply
+imports the settings object for convenience.
 """
 
-__all__ = []
+from .config import settings  # noqa: F401
+
+__all__ = ["settings"]
